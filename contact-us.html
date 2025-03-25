@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Contact Us | Stealthy</title>
+
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <main class="wrapperd z-[1] relative w-full h-full">
+      <section class="relative w-full h-full">
+        <header
+          class="flex items-center lg:justify-between border-b border-gray-300 py-3 px-5 sm:px-10 bg-transparent min-h-[65px] tracking-wide relative z-50"
+        >
+          <div
+            class="flex items-center justify-between gap-4 mx-auto h-full w-full"
+          >
+            <a href="index.html" class="max-lg:!block hidden w-32">
+              <img
+                src="assets/images/stealthyLogo.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+
+            <div
+              id="collapseMenu"
+              class="max-lg:hidden lg:!block max-lg:w-full lg:w-[43%] max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+            >
+              <button
+                id="toggleClose"
+                class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 fill-slate-900"
+                  viewBox="0 0 320.591 320.591"
+                >
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+
+              <ul
+                class="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[320px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+              >
+                <li class="mb-4 hidden max-lg:block">
+                  <a href="index.html"
+                    ><img
+                      src="assets/images/stealthyLogo.svg"
+                      alt="logo"
+                      class="w-32"
+                    />
+                  </a>
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="index.html"
+                    class="font-medium lg:hover:text-blue-700 text-blue-700 block text-[15px]"
+                    >Home</a
+                  >
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="javascript:void(0)"
+                    class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
+                    >Disposables</a
+                  >
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="about-us.html"
+                    class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="flexy hidden lg:block">
+              <a href="index.html" class="hidden lg:block"
+                ><img
+                  src="assets/images/stealthyLogo.svg"
+                  alt="logo"
+                  class="w-36"
+                />
+              </a>
+            </div>
+
+            <div class="flexy gap-4 ml-auto">
+              <div class="flex space-x-4">
+                <a href="contact-us.html" class="max-lg:!hidden flexy gap-x-1">
+                  <span class="text-[15px]">Contact Us</span>
+                  <div class="flexy rounded-full w-7 h-7 bg-white">
+                    <i class="ri-links-line"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="verify.html"
+                  class="px-3 py-1 bg-white rounded-full flexy gap-x-2"
+                >
+                  Verify
+                  <div class="flexy rounded-full w-6 h-6 bg-black text-white">
+                    <i class="ri-check-line"></i>
+                  </div>
+                </a>
+              </div>
+
+              <button id="toggleOpen" class="lg:hidden">
+                <svg
+                  class="w-7 h-7"
+                  fill="#000"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div
+          class="absolute top-0 w-full h-full -z-[1] bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/VerifyPat.svg')"
+        ></div>
+
+        <div
+          class="relative w-full max-lg:!h-full lg:!h-screen px-5 sm:px-10 py-10"
+        >
+          <div class="w-full flexy relative pt-10">
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-8 w-full h-full"
+            >
+              <div class="were relative w-full h-full contactPat">
+                <div class="justCenter flex-col space-y-7 lg:pt-10">
+                  <div
+                    class="itemStart flex-col space-y-1 text-5xl lg:text-7xl"
+                  >
+                    <h1 class="grifter">We're Here</h1>
+                    <h1 class="grifter">to Help</h1>
+                  </div>
+                  <div class="flex lg:w-10/12">
+                    <p>
+                      At Paradise, customer satisfaction is our top priority.
+                      Whether you have a question about our products, need
+                      assistance with your order, or simply want to share your
+                      feedback, we’re here to help. Our dedicated team is ready
+                      to provide you with the support and information you need
+                      to have the best possible experience with our products and
+                      services.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="contactForm relative w-full h-full">
+                <form class="grid grid-cols-12 w-full gap-5">
+                  <div
+                    class="col-span-12 md:col-span-6 itemStart flex-col w-full space-y-2"
+                  >
+                    <label class="text-xl grifter">Full Name</label>
+                    <input
+                      type="text"
+                      placeholder="John David"
+                      class="px-4 py-2 w-full rounded-lg border border-black"
+                    />
+                  </div>
+                  <div
+                    class="col-span-12 md:col-span-6 itemStart flex-col w-full space-y-2"
+                  >
+                    <label class="text-xl grifter">Email</label>
+                    <input
+                      type="email"
+                      placeholder="consult@mail.com"
+                      class="px-4 py-2 w-full rounded-lg border border-black"
+                    />
+                  </div>
+                  <div
+                    class="col-span-12 md:col-span-6 itemStart flex-col w-full space-y-2"
+                  >
+                    <label class="text-xl grifter">Phone</label>
+                    <input
+                      type="tel"
+                      placeholder="+008 654 231"
+                      class="px-4 py-2 w-full rounded-lg border border-black"
+                    />
+                  </div>
+                  <div
+                    class="col-span-12 md:col-span-6 itemStart flex-col w-full space-y-2"
+                  >
+                    <label class="text-xl grifter">Company</label>
+                    <input
+                      type="text"
+                      placeholder="Yourcompany.Com"
+                      class="px-4 py-2 w-full rounded-lg border border-black"
+                    />
+                  </div>
+                  <div class="col-span-12 itemStart flex-col w-full space-y-2">
+                    <label class="text-xl grifter">Message</label>
+                    <textarea
+                      rows="5"
+                      placeholder="Yourcompany.Com"
+                      class="px-4 py-2 w-full rounded-lg border border-black"
+                    ></textarea>
+                  </div>
+                  <div class="col-span-8 itemStart flex-col w-full space-y-2">
+                    <button
+                      type="submit"
+                      class="grifter text-lg py-2.5 px-6 bg-black rounded-full text-white cursor-pointer"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-black relative w-full h-full">
+        <div class="w-full h-full px-5 sm:px-10 py-6 text-white">
+          <div
+            class="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between mt-1 max-lg:space-y-4"
+          >
+            <div class="flex gap-x-2">
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/FBicon.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img
+                  src="assets/images/TwitterIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img
+                  src="assets/images/YoutubeIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/stealthyindustries/"
+                target="_blank"
+                class="w-12"
+              >
+                <img
+                  src="assets/images/InstagramIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <p class="text-xl">© 2024 Stealthy</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

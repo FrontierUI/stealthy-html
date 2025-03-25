@@ -102,6 +102,52 @@ a:hover {
   background-size: cover;
 } */
 
+.w-h16 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4rem;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 50%;
+}
+
+.redSmPat {
+  position: relative;
+  z-index: 3;
+}
+
+.redSmPat::before {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 16rem;
+  height: 100%;
+  background-image: url('/assets/images/smRedPat.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.patRed {
+  position: relative;
+  z-index: 3;
+}
+
+.patRed::before {
+  position: absolute;
+  z-index: 1;
+  content: '';
+  width: 36rem;
+  height: 100%;
+  background-image: url('/assets/images/redPAt.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* Faq Sect Start */
 
 .accordion .accordion-item {

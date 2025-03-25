@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Us | Stealthy</title>
+
+    <link rel="stylesheet" href="assets/css/globals.css" />
+    <link rel="stylesheet" href="assets/css/slick.css" />
+    <link rel="stylesheet" href="assets/css/slick-theme.css" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <main class="wrapperd z-[1] relative w-full h-full">
+      <section class="relative w-full h-full">
+        <header
+          class="flex items-center lg:justify-between border-b border-gray-300 py-3 px-5 sm:px-10 bg-transparent min-h-[65px] tracking-wide relative z-50"
+        >
+          <div
+            class="flex items-center justify-between gap-4 mx-auto h-full w-full"
+          >
+            <a href="index.html" class="max-lg:!block hidden w-32">
+              <img
+                src="assets/images/stealthyLogo.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+
+            <div
+              id="collapseMenu"
+              class="max-lg:hidden lg:!block max-lg:w-full lg:w-[43%] max-lg:fixed max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+            >
+              <button
+                id="toggleClose"
+                class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white w-9 h-9 flex items-center justify-center border"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-3.5 h-3.5 fill-slate-900"
+                  viewBox="0 0 320.591 320.591"
+                >
+                  <path
+                    d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                    data-original="#000000"
+                  ></path>
+                  <path
+                    d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                    data-original="#000000"
+                  ></path>
+                </svg>
+              </button>
+
+              <ul
+                class="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[320px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
+              >
+                <li class="mb-4 hidden max-lg:block">
+                  <a href="index.html"
+                    ><img
+                      src="assets/images/stealthyLogo.svg"
+                      alt="logo"
+                      class="w-32"
+                    />
+                  </a>
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="index.html"
+                    class="font-medium lg:hover:text-blue-700 text-blue-700 block text-[15px]"
+                    >Home</a
+                  >
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="disposables.html"
+                    class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
+                    >Disposables</a
+                  >
+                </li>
+                <li class="max-lg:py-3 px-3">
+                  <a
+                    href="about-us.html"
+                    class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
+                    >About Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="flexy hidden lg:block">
+              <a href="index.html" class="hidden lg:block"
+                ><img
+                  src="assets/images/stealthyLogo.svg"
+                  alt="logo"
+                  class="w-36"
+                />
+              </a>
+            </div>
+
+            <div class="flexy gap-4 ml-auto">
+              <div class="flex space-x-4">
+                <a href="contact-us.html" class="max-lg:!hidden flexy gap-x-1">
+                  <span class="text-[15px]">Contact Us</span>
+                  <div class="flexy rounded-full w-7 h-7 bg-white">
+                    <i class="ri-links-line"></i>
+                  </div>
+                </a>
+
+                <a
+                  href="verify.html"
+                  class="px-3 py-1 bg-white rounded-full flexy gap-x-2"
+                >
+                  Verify
+                  <div class="flexy rounded-full w-6 h-6 bg-black text-white">
+                    <i class="ri-check-line"></i>
+                  </div>
+                </a>
+              </div>
+
+              <button id="toggleOpen" class="lg:hidden">
+                <svg
+                  class="w-7 h-7"
+                  fill="#000"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <div
+          class="absolute top-0 w-full h-full -z-[1] bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/hero.svg')"
+        ></div>
+
+        <div class="relative w-full h-screen">
+          <div class="itemStart relative w-full h-full">
+            <div
+              class="relative itemStart flex-col py-10 px-5 sm:px-10 w-full h-full"
+            >
+              <div class="relative itemStart flex-col w-full h-full space-y-5">
+                <div class="itemStart flex-col text-5xl lg:text-7xl space-y-2">
+                  <h1 class="grifter">Discretion</h1>
+                  <h1 class="grifter">Meets Innovation</h1>
+                </div>
+
+                <div
+                  class="flex flex-col md:flex-row items-start text-2xl lg:text-4xl gap-2"
+                >
+                  <h2>Vaping Redifined.</h2>
+                  <h2>Experience Elevated.</h2>
+                </div>
+
+                <div class="itemStart lg:w-2/5">
+                  <p>
+                    At Stealthy, we believe that cannabis consumption should be
+                    smooth, discreet, and hassle-free—without sacrificing
+                    potency or flavor. That’s why we’ve created a premium vape
+                    pod system designed for those who demand power, purity, and
+                    convenience in every draw.
+                  </p>
+                </div>
+              </div>
+
+              <div class="absolute max-lg:bottom-24 bottom-10">
+                <ul class="itemStart flex-col space-y-2">
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="w-7 h-7 flexy text-xl p-2 rounded-full bg-black text-white"
+                    >
+                      <i class="ri-check-fill"></i>
+                    </div>
+                    <span>Eco-Friendly</span>
+                  </li>
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="w-7 h-7 flexy text-xl p-2 rounded-full bg-black text-white"
+                    >
+                      <i class="ri-check-fill"></i>
+                    </div>
+                    <span>Ultra-Discreet</span>
+                  </li>
+                  <li class="justStart gap-x-3">
+                    <div
+                      class="w-7 h-7 flexy text-xl p-2 rounded-full bg-black text-white"
+                    >
+                      <i class="ri-check-fill"></i>
+                    </div>
+                    <span>Smokeless Technology </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="absolute right-0 bottom-0 hidden lg:block max-w-4xl">
+              <img src="assets/images/Bundle.png" class="img-fluid" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission -->
+      <section class="missionSec relative w-full h-full">
+        <div
+          class="absolute bottom-0 w-full h-full bg-center bg-no-repeat bg-cover"
+          style="background-image: url('/assets/images/chooss.svg')"
+        ></div>
+
+        <div class="relative flexy w-full h-full py-10 px-5">
+          <div class="relative flexy flex-col space-y-5 w-full h-full pt-5">
+            <div class="w-full text-center flexy flex-col space-y-4">
+              <div class="flexy text-5xl lg:text-7xl">
+                <h1 class="grifter">Our Mission?</h1>
+              </div>
+              <div class="flexy md:w-2/3 lg:w-[46%]">
+                <p>
+                  To revolutionize the vaping experience with cutting-edge
+                  technology, sleek design, and top-tier cannabis extracts.
+                  Whether you’re unwinding after a long day, sparking
+                  creativity, or staying discreet on the go, Stealthy is built
+                  to keep up with your lifestyle.
+                </p>
+              </div>
+
+              <a
+                href="javascript:void(0)"
+                class="flex items-center gap-x-3 bg-gray-200 py-2 px-4 relative rounded-full mt-3"
+              >
+                <span class="text-lg">Our Products</span>
+                <div
+                  class="w-7 h-7 p-2 bg-black text-xl rounded-full text-white flexy"
+                >
+                  <i class="ri-arrow-right-up-line absolute"></i>
+                </div>
+              </a>
+            </div>
+
+            <div class="relative -mt-8 lg:-mt-20 flexy w-full h-full">
+              <div class="w-full h-full flexy">
+                <img
+                  src="assets/images/threeDevices.png"
+                  class="img-fluid object-cover lg:w-4/5 lg:max-h-[40rem]"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div class="relative bottom-0 flex gap-x-2.5">
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/fbBlk.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/xblk.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/ytBlk.svg" class="img-fluid" alt="" />
+              </a>
+              <a
+                href="https://www.instagram.com/stealthyindustries/"
+                target="_blank"
+                class="w-12"
+              >
+                <img
+                  src="assets/images/instaBlk.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full quality">
+        <div
+          class="absolute bottom-0 w-full h-full bg-center bg-no-repeat bg-cover"
+          style="background-image: url('/assets/images/chooss.svg')"
+        ></div>
+
+        <div class="w-full h-full py-10 px-5 sm:px-10">
+          <div
+            class="flex flex-col lg:flex-row items-start lg:items-end justify-start lg:justify-between relative w-full h-full lg:pt-5"
+          >
+            <div
+              class="flex flex-col lg:flex-row items-start justify-start lg:justify-between relative w-full h-full max-lg:gap-y-5 lg:w-3/4"
+            >
+              <div class="relative itemStart flex-col space-y-5">
+                <div class="itemStart flex-col space-y-2 text-4xl lg:text-6xl">
+                  <h1 class="grifter">Our Commitment</h1>
+                  <h1 class="grifter">To Quality</h1>
+                </div>
+                <div class="itemStart md:w-2/3 text-md">
+                  <p>
+                    At Stealthy, we believe in clean, potent, and flavorful
+                    cannabis experiences—without the compromises.
+                  </p>
+                </div>
+              </div>
+
+              <div class="relative lg:right-20 max-lg:overflow-hidden">
+                <div class="flexy w-full h-full lg:max-w-4xl">
+                  <img
+                    src="assets/images/pineappleDevice.png"
+                    class="img-fluid rotate-[15deg] lg:rotate-[25deg]"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="relative bottom-0 flex items-start justify-start lg:items-end lg:justify-end w-full lg:w-1/4 max-lg:pt-16"
+            >
+              <div
+                class="flex flex-col items-start justify-start lg:items-end lg:justify-end w-full"
+              >
+                <ul class="flex w-full lg:items-end flex-col space-y-3">
+                  <li class="flexy gap-x-4 relative w-full w-full">
+                    <div class="w-h16">
+                      <img
+                        src="assets/images/premCanibis.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="itemStart flex-col space-y-1 relative w-full">
+                      <span class="text-lg font-medium"
+                        >Premium Cannabis Extracts</span
+                      >
+                      <p class="leading-tight">
+                        We source only the finest, lab-tested cannabis to ensure
+                        purity and consistency.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="flexy gap-x-4 relative w-full w-full">
+                    <div class="w-h16">
+                      <img
+                        src="assets/images/techy.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="itemStart flex-col space-y-1 relative w-full">
+                      <span class="text-lg font-medium"
+                        >Advanced Technology</span
+                      >
+                      <p class="leading-tight">
+                        Our leak-proof, button-free, whisper-quiet system makes
+                        vaping effortless.
+                      </p>
+                    </div>
+                  </li>
+
+                  <li class="flexy gap-x-4 relative w-full w-full">
+                    <div class="w-h16">
+                      <img
+                        src="assets/images/portabl.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="itemStart flex-col space-y-1 relative w-full">
+                      <span class="text-lg font-medium"
+                        >Discreet & Portable</span
+                      >
+                      <p class="leading-tight">
+                        A sleek, compact design that fits seamlessly into your
+                        pocket and your life.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="flexy gap-x-4 relative w-full w-full">
+                    <div class="w-h16">
+                      <img
+                        src="assets/images/rechargeable.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                    <div class="itemStart flex-col space-y-1 relative w-full">
+                      <span class="text-lg font-medium"
+                        >Sustainable & Rechargeable</span
+                      >
+                      <p class="leading-tight">
+                        Eco-conscious vaping with long battery life and fast
+                        charging.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full advanced">
+        <div
+          class="absolute bottom-0 w-full h-full bg-center bg-no-repeat bg-cover"
+          style="background-image: url('/assets/images/behindPat.svg')"
+        ></div>
+
+        <div class="relative flexy w-full h-full px-5 sm:px-10">
+          <div class="relative flexy flex-col w-full h-full pt-10 space-y-4">
+            <div class="flexy flex-col text-center pt-10 pb-6 w-full space-y-3">
+              <div class="flexy flex-col text-4xl lg:text-6xl space-y-1">
+                <h1 class="grifter">The Tech</h1>
+                <h1 class="grifter">Behind Stealthy</h1>
+              </div>
+              <p class="lg:w-[45%]">
+                Stealthy is more than just a sleek vape—it’s built with
+                cutting-edge technology to deliver optimal performance, flavor,
+                and discretion.
+              </p>
+            </div>
+
+            <div
+              class="grid grid-cols-1 lg:grid-cols-3 items-center py-6 gap-5 w-full h-full"
+            >
+              <div class="relative w-full h-full flexy flex-col space-y-5 py-8">
+                <div class="flexy w-full relative gap-x-3">
+                  <div
+                    class="absolute hidden md:flex items-center justify-center -right-[2rem] top-[50%] bg-white/[0.45] w-7 h-7 rounded-full p-2"
+                  >
+                    <div
+                      class="rounded-full flexy p-1 bg-black w-5 h-5 text-[#fff]"
+                    >
+                      <i class="ri-add-fill"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="relative border border-slate-300 bg-white/[0.45] rounded-xl w-full h-full !p-6"
+                  >
+                    <div class="itemStart flex-col space-y-3 relative mt-12">
+                      <div
+                        class="flex flex-col leading-none space-y-0 text-2xl"
+                      >
+                        <h3 class="grifter">Smooth,</h3>
+                        <h3 class="grifter">Consistent Hits</h3>
+                        <h3 class="grifter">With Every Inhale</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute right-3 top-3 w-[4.5rem] h-[4.5rem] flexy p-3 rounded-lg bg-black"
+                    >
+                      <img
+                        src="assets/images/heating.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full h-full flexy">
+                <div class="flexy relative w-full h-full">
+                  <img
+                    src="assets/images/modPat.svg"
+                    class="img-fluid"
+                    alt=""
+                  />
+
+                  <div class="absolute w-full h-full flexy p-8">
+                    <img
+                      src="assets/images/creamsicle.png"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative w-full h-full flexy flex-col space-y-5 py-8">
+                <div class="flexy w-full h-full relative gap-x-3">
+                  <div
+                    class="absolute hidden md:flex items-center justify-center -left-[2rem] top-[50%] bg-white/[0.45] w-7 h-7 rounded-full p-2"
+                  >
+                    <div
+                      class="rounded-full flexy p-1 bg-black w-5 h-5 text-[#fff]"
+                    >
+                      <i class="ri-add-fill"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="relative border border-slate-300 bg-white/[0.45] rounded-xl w-full h-full !p-6"
+                  >
+                    <div class="itemStart flex-col space-y-3 relative mt-12">
+                      <div
+                        class="flex flex-col leading-none space-y-0 text-2xl"
+                      >
+                        <h3 class="grifter">No Buttons,</h3>
+                        <h3 class="grifter">No Settings—</h3>
+                        <h3 class="grifter">Just Simplicity</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute right-3 top-3 w-[4.5rem] h-[4.5rem] flexy p-3 rounded-lg bg-black"
+                    >
+                      <img
+                        src="assets/images/advWhi.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="flexy w-full h-full relative gap-x-3">
+                  <div
+                    class="absolute hidden md:flex items-center justify-center -left-[2rem] top-[50%] bg-white/[0.45] w-7 h-7 rounded-full p-2"
+                  >
+                    <div
+                      class="rounded-full flexy p-1 bg-black w-5 h-5 text-[#fff]"
+                    >
+                      <i class="ri-add-fill"></i>
+                    </div>
+                  </div>
+                  <div
+                    class="relative border border-slate-300 bg-white/[0.45] rounded-xl w-full h-full !p-6"
+                  >
+                    <div class="itemStart flex-col space-y-3 relative mt-12">
+                      <div
+                        class="flex flex-col leading-none space-y-0 text-2xl"
+                      >
+                        <h3 class="grifter">Fast-Charging,</h3>
+                        <h3 class="grifter">Long-Lasting</h3>
+                        <h3 class="grifter">Battery</h3>
+                      </div>
+                    </div>
+                    <div
+                      class="absolute right-3 top-3 w-[4.5rem] h-[4.5rem] flexy p-3 rounded-lg bg-black"
+                    >
+                      <img
+                        src="assets/images/battery.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full comEvents">
+        <div class="flexy w-full h-full sm:px-10 py-10">
+          <div
+            class="relative comPat justCenter bg-black p-10 w-full h-full overflow-hidden rounded-xl min-h-96 lg:max-h-[470px] my-5"
+          >
+            <div
+              class="absolute w-full h-full right-0 top-0 bg-cover bg-center bg-no-repeat"
+              style="background-image: url('/assets/images/comPat.svg')"
+            ></div>
+
+            <div
+              class="w-full flex flex-col lg:flex-row items-start justify-start lg:justify-between max-lg:gap-y-6 lg:gap-x-6 z-10"
+            >
+              <div
+                class="itemStart flex-col text-white space-y-4 lg:w-1/2 py-8 px-5 lg:w-1/2"
+              >
+                <div class="itemStart flex-col text-5xl lg:text-6xl">
+                  <h1 class="grifter">Community</h1>
+                  <h1 class="grifter">Events</h1>
+                </div>
+                <p class="lg:w-10/12">
+                  Join us at our community events where you can meet fellow
+                  cannabis enthusiasts, learn from industry experts, and enjoy
+                  exclusive promotions. Check our Events page for upcoming
+                  events near you. Our events are designed to foster community
+                  spirit and provide valuable information and entertainment.
+                </p>
+                <div class="flex gap-x-2">
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/FBicon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/TwitterIcon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a href="javascript:void(0)" class="w-12">
+                    <img
+                      src="assets/images/YoutubeIcon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/stealthyindustries/"
+                    target="_blank"
+                    class="w-12"
+                  >
+                    <img
+                      src="assets/images/InstagramIcon.svg"
+                      class="img-fluid"
+                      alt=""
+                    />
+                  </a>
+                </div>
+              </div>
+
+              <div class="flexy lg:w-1/2">
+                <div class="flexy relative bottom-4">
+                  <img
+                    src="assets/images/communityEvents.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="relative w-full h-full movement">
+        <div
+          class="absolute -z-[1] w-full h-full bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/assets/images/movemPat.svg')"
+        ></div>
+
+        <div class="relative w-full h-full px-5 pt-10">
+          <div class="relative flexy flex-col w-full h-full">
+            <div class="flexy flex-col w-full text-center space-y-5">
+              <div class="flexy flex-col text-4xl lg:text-6xl space-y-0">
+                <h1 class="grifter">Join The</h1>
+                <h1 class="grifter">Stealthy Movement</h1>
+              </div>
+              <div class="flexy lg:w-2/5">
+                <p>
+                  We’re more than just a brand—we’re a community of
+                  forward-thinkers who value discretion, quality, and
+                  innovation.
+                </p>
+              </div>
+            </div>
+
+            <div class="relative flexy w-full h-full mt-10">
+              <div class="flexy w-full h-full object-cover">
+                <img
+                  src="assets/images/RedDevice.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="newsLetSec z-[5] relative w-full h-full bg-[#70D4A8]">
+        <div
+          class="absolute -z-[1] w-full h-full bg-center bg-cover bg-no-repeat"
+          style="background-image: url('/assets/images/nlPat.svg')"
+        ></div>
+
+        <div class="flexy w-full h-full py-10 px-5 sm:px-10">
+          <div class="flexy flex-col py-10 space-y-4">
+            <div class="flexy flex-col text-center space-y-0">
+              <h1 class="text-5xl lg:text-7xl grifter uppercase">Join Our</h1>
+              <h1 class="text-5xl lg:text-7xl grifter uppercase">NewsLetter</h1>
+
+              <p class="text-center mt-1">
+                Sign up for deals, new products and promotions
+              </p>
+            </div>
+
+            <div class="group w-full md:max-w-sm lg:max-w-2xl">
+              <div class="relative flex items-center">
+                <input
+                  type="text"
+                  placeholder=""
+                  class="peer relative w-full rounded-md bg-gray-50 py-3 pl-4 pr-8 outline-none drop-shadow-sm transition-all duration-200 ease-in-out focus:bg-white focus:drop-shadow-lg"
+                />
+                <button
+                  class="absolute right-0 py-3 px-6 rounded-r-md bg-black font-semibold text-white transition-all duration-200 ease-in-out group-focus-within:bg-black group-focus-within:hover:bg-black cursor-pointer"
+                >
+                  Join Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-black relative w-full h-full">
+        <div class="w-full h-full px-5 sm:px-10 py-6 text-white">
+          <div
+            class="flex flex-col lg:flex-row items-start lg:items-center justify-center lg:justify-between mt-1 max-lg:space-y-4"
+          >
+            <div class="flex gap-x-2">
+              <a href="javascript:void(0)" class="w-12">
+                <img src="assets/images/FBicon.svg" class="img-fluid" alt="" />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img
+                  src="assets/images/TwitterIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <a href="javascript:void(0)" class="w-12">
+                <img
+                  src="assets/images/YoutubeIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/stealthyindustries/"
+                target="_blank"
+                class="w-12"
+              >
+                <img
+                  src="assets/images/InstagramIcon.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <p class="text-xl">© 2024 Stealthy</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/js/jquery-3.7.1.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

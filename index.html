@@ -20,11 +20,13 @@
 
   <body>
     <main class="wrapperd z-[1] relative w-full h-full">
-      <section class="stealthHero relative w-full h-full">
+      <section class="relative w-full h-full z-[1]">
         <header
           class="flex items-center lg:justify-between border-b border-gray-300 py-3 px-5 sm:px-10 bg-transparent min-h-[65px] tracking-wide relative z-50"
         >
-          <div class="flex items-center justify-between gap-4 mx-auto w-full">
+          <div
+            class="flex items-center justify-between gap-4 mx-auto h-full w-full"
+          >
             <a href="index.html" class="max-lg:!block hidden w-32">
               <img
                 src="assets/images/stealthyLogo.svg"
@@ -61,7 +63,7 @@
                 class="lg:flex lg:gap-x-3 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-2/3 max-lg:min-w-[320px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
               >
                 <li class="mb-4 hidden max-lg:block">
-                  <a href="javascript:void(0)"
+                  <a href="index.html"
                     ><img
                       src="assets/images/stealthyLogo.svg"
                       alt="logo"
@@ -71,21 +73,21 @@
                 </li>
                 <li class="max-lg:py-3 px-3">
                   <a
-                    href="javascript:void(0)"
+                    href="index.html"
                     class="font-medium lg:hover:text-blue-700 text-blue-700 block text-[15px]"
                     >Home</a
                   >
                 </li>
                 <li class="max-lg:py-3 px-3">
                   <a
-                    href="javascript:void(0)"
+                    href="disposables.html"
                     class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
                     >Disposables</a
                   >
                 </li>
                 <li class="max-lg:py-3 px-3">
                   <a
-                    href="javascript:void(0)"
+                    href="about-us.html"
                     class="font-medium lg:hover:text-blue-700 text-slate-900 block text-[15px]"
                     >About Us</a
                   >
@@ -105,10 +107,7 @@
 
             <div class="flexy gap-4 ml-auto">
               <div class="flex space-x-4">
-                <a
-                  href="javascript:void(0)"
-                  class="max-lg:!hidden flexy gap-x-1"
-                >
+                <a href="contact-us.html" class="max-lg:!hidden flexy gap-x-1">
                   <span class="text-[15px]">Contact Us</span>
                   <div class="flexy rounded-full w-7 h-7 bg-white">
                     <i class="ri-links-line"></i>
@@ -116,7 +115,7 @@
                 </a>
 
                 <a
-                  href="javascript:void(0)"
+                  href="verify.html"
                   class="px-3 py-1 bg-white rounded-full flexy gap-x-2"
                 >
                   Verify
@@ -144,110 +143,30 @@
           </div>
         </header>
 
+        <div
+          class="absolute top-0 w-full h-full -z-[1] bg-cover bg-center bg-no-repeat"
+          style="background-image: url('/assets/images/hero.svg')"
+        ></div>
+
         <div class="relative flexy flex-col w-full h-full pt-6 pb-4">
           <div class="flexy flex-col w-full h-full px-5 space-y-2">
             <div
-              class="flexy flex-col text-center max-lg:mt-16 text-3xl lg:text-7xl"
+              class="flexy flex-col text-center max-lg:mt-16 text-4xl lg:text-7xl lg:mt-8"
             >
               <h1 class="grifter">Introducing</h1>
               <h1 class="grifter">The Stealthy Air Smokesless</h1>
               <h1 class="grifter">All-In-One-Vape</h1>
             </div>
-            <div class="flexy flex-col text-center text-2xl lg:text-4xl">
-              <h1>Ultra-Sleek. Ultra-Potent. Ultra-Stealthy.</h1>
-            </div>
           </div>
 
-          <div class="relative w-full h-full">
+          <div class="relative w-full max-lg:h-[67vh] lg:h-[60vh]">
             <div
-              class="absolute lg:-bottom-28 w-full h-[72vh] lg:h-[60vh] bg-cover bg-center bg-no-repeat"
+              class="absolute lg:-top-14 w-full h-full bg-cover bg-center bg-no-repeat"
               style="background-image: url('/assets/images/heroProd.png')"
             ></div>
 
-            <div class="relative w-full px-5 sm:px-10 itemStart">
-              <div
-                class="relative itemStart max-lg:top-80 lg:top-14 flex-col space-y-8"
-              >
-                <div
-                  class="w-28 h-28 rounded-full bg-white flexy flex-col text-center p-4 space-y-1"
-                >
-                  <h4 class="text-lg grifter">4.8</h4>
-                  <div class="flex text-sm">
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-fill"></i>
-                    <i class="ri-star-line"></i>
-                  </div>
-                  <div class="flex-col leading-none">
-                    <p>Average</p>
-                    <p>score</p>
-                  </div>
-                </div>
-                <div
-                  class="w-24 h-24 rounded-full bg-white flexy p-2 text-6xl transition-all duration-300 hover:bg-black hover:text-white cursor-pointer"
-                >
-                  <i class="ri-arrow-right-up-line"></i>
-                </div>
-              </div>
-
-              <div
-                class="absolute max-lg:top-[22rem] lg:top-[11rem] max-lg:left-36 lg:left-[17%] flexy gap-x-2"
-              >
-                <div class="w-8 h-8 rounded-full flexy bg-white/[0.25] p-2">
-                  <div
-                    class="w-5 h-5 rounded-full flexy bg-white p-1 text-[#DE7F6C]"
-                  >
-                    <i class="ri-add-fill"></i>
-                  </div>
-                </div>
-                <div
-                  class="bg-white/[0.50] p-3 justCenter flex-col rounded-xl space-y-3"
-                >
-                  <div class="flexy rounded-lg p-2 w-8 h-8 bg-[#DE7F6C]">
-                    <img
-                      src="assets/images/canibis.svg"
-                      class="img-fluid w-5"
-                      alt=""
-                    />
-                  </div>
-                  <div class="itemStart flex-col text-xl leading-tight">
-                    <h3 class="grifter">Pure Cannabis</h3>
-                    <h3 class="grifter">Advanced Tech</h3>
-                  </div>
-                </div>
-              </div>
-
-              <div
-                class="absolute max-lg:top-44 max-lg:left-20 lg:top-[3rem] lg:right-[28%] flexy gap-x-2"
-              >
-                <div class="w-8 h-8 rounded-full flexy bg-white/[0.25] p-2">
-                  <div
-                    class="w-5 h-5 rounded-full flexy bg-white p-1 text-[#DE7F6C]"
-                  >
-                    <i class="ri-add-fill"></i>
-                  </div>
-                </div>
-                <div
-                  class="bg-white/[0.50] p-3 justCenter flex-col rounded-xl space-y-3"
-                >
-                  <div class="flexy rounded-lg p-2 w-8 h-8 bg-[#DE7F6C]">
-                    <img
-                      src="assets/images/discreet.svg"
-                      class="img-fluid w-5"
-                      alt=""
-                    />
-                  </div>
-                  <div class="itemStart flex-col text-xl leading-tight">
-                    <h3 class="grifter">Discreet. Portable</h3>
-                    <h3 class="grifter">Hassle-Free.</h3>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="hidden lg:block absolute -bottom-[7.5rem] lg:right-10">
-              <div class="flex items-end justify-end gap-x-2">
+            <div class="absolute max-lg:top-80 lg:top-20 right-5 lg:!right-10">
+              <div class="flex flex-col items-end justify-end gap-y-2">
                 <a href="javascript:void(0)" class="w-11">
                   <img src="assets/images/fbBlk.svg" class="img-fluid" alt="" />
                 </a>
@@ -257,7 +176,11 @@
                 <a href="javascript:void(0)" class="w-11">
                   <img src="assets/images/ytBlk.svg" class="img-fluid" alt="" />
                 </a>
-                <a href="javascript:void(0)" class="w-11">
+                <a
+                  href="https://www.instagram.com/stealthyindustries/"
+                  target="_blank"
+                  class="w-11"
+                >
                   <img
                     src="assets/images/instaBlk.svg"
                     class="img-fluid"
@@ -270,17 +193,13 @@
         </div>
       </section>
 
-      <section
-        class="relative w-full h-full choosed max-lg:mt-72 pt-28 pb-0 lg:pb-16"
-      >
+      <section class="relative w-full h-full choosed">
         <div
           class="absolute bottom-0 w-full h-full bg-center bg-no-repeat bg-cover"
           style="background-image: url('/assets/images/chooss.svg')"
         ></div>
 
-        <div
-          class="relative flexy flex-col w-full h-full pt-10 pb-6 px-5 sm:px-10"
-        >
+        <div class="relative flexy flex-col w-full h-full px-5 sm:px-10">
           <div
             class="w-full h-full flex-col text-center py-10 text-5xl lg:text-6xl space-y-2"
           >
@@ -289,7 +208,7 @@
           </div>
 
           <div
-            class="grid grid-cols-1 lg:grid-cols-3 pt-5 w-full h-full max-lg:gap-y-6 lg:gap-6"
+            class="grid grid-cols-1 lg:grid-cols-3 w-full h-full max-lg:gap-y-6 lg:gap-6 pb-5 lg:pb-10"
           >
             <div
               class="relative visionaryCont flexy w-full h-full group cursor-pointer max-lg:min-h-[480px]"
@@ -299,7 +218,7 @@
                   class="absolute w-full z-20 flex items-end justify-end top-3 right-7"
                 >
                   <div
-                    class="border-3 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
+                    class="border-2 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
                   >
                     <i class="ri-arrow-right-up-line"></i>
                   </div>
@@ -317,7 +236,7 @@
                     />
                   </div>
                   <div
-                    class="itemStart max-lg:py-4 max-lg:mt-6 lg:pt-16 flex-col space-y-3"
+                    class="itemStart max-lg:py-4 max-lg:mt-6 xl:pt-16 flex-col space-y-3"
                   >
                     <div class="flex flex-col space-y-2 text-4xl font-medium">
                       <h2>Sustainable</h2>
@@ -336,7 +255,7 @@
                 class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
               >
                 <img
-                  src="assets/images/choosWhitePat.svg"
+                  src="assets/images/choossWhitePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -345,7 +264,7 @@
                 class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
               >
                 <img
-                  src="assets/images/pinkPattern.svg"
+                  src="assets/images/choossOrangePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -360,7 +279,7 @@
                   class="absolute w-full z-20 flex items-end justify-end top-3 right-7"
                 >
                   <div
-                    class="border-3 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
+                    class="border-2 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
                   >
                     <i class="ri-arrow-right-up-line"></i>
                   </div>
@@ -378,7 +297,7 @@
                     />
                   </div>
                   <div
-                    class="itemStart max-lg:py-4 max-lg:mt-6 lg:pt-16 flex-col space-y-3"
+                    class="itemStart max-lg:py-4 max-lg:mt-6 xl:pt-20 flex-col space-y-3"
                   >
                     <div class="flex flex-col space-y-2 text-4xl font-medium">
                       <h2>Customer</h2>
@@ -396,7 +315,7 @@
                 class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
               >
                 <img
-                  src="assets/images/choosWhitePat.svg"
+                  src="assets/images/choossWhitePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -405,7 +324,7 @@
                 class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
               >
                 <img
-                  src="assets/images/pinkPattern.svg"
+                  src="assets/images/choossOrangePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -420,7 +339,7 @@
                   class="absolute w-full z-20 flex items-end justify-end top-3 right-7"
                 >
                   <div
-                    class="border-3 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
+                    class="border-2 border-black flexy p-5 text-6xl w-16 h-16 lg:w-24 lg:h-24 relative max-lg:top-10 rounded-full transition duration-500 group-hover:bg-black group-hover:text-white"
                   >
                     <i class="ri-arrow-right-up-line"></i>
                   </div>
@@ -434,7 +353,7 @@
                     <img src="assets/images/rig.svg" class="img-fluid" alt="" />
                   </div>
                   <div
-                    class="itemStart max-lg:py-4 max-lg:mt-6 lg:pt-16 flex-col space-y-3"
+                    class="itemStart max-lg:py-4 max-lg:mt-6 xl:pt-16 flex-col space-y-3"
                   >
                     <div class="flex flex-col space-y-2 text-4xl font-medium">
                       <h2>Rigorous</h2>
@@ -453,7 +372,7 @@
                 class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
               >
                 <img
-                  src="assets/images/choosWhitePat.svg"
+                  src="assets/images/choossWhitePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -462,7 +381,7 @@
                 class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
               >
                 <img
-                  src="assets/images/pinkPattern.svg"
+                  src="assets/images/choossOrangePattey.svg"
                   class="img-fluid"
                   alt=""
                 />
@@ -498,31 +417,14 @@
                   <div
                     class="relative visionaryCont flexy w-full h-full group cursor-pointer"
                   >
-                    <div
-                      class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-                    >
+                    <div class="visionFront w-full h-full flexy relative">
                       <img
                         src="assets/images/whitePat.svg"
                         class="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div
-                      class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-                    >
-                      <div class="absolute flexy w-full h-full">
-                        <img
-                          src="assets/images/pinePat.svg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <img
-                        src="assets/images/pineApple.png"
-                        class="img-fluid z-10"
-                        alt=""
-                      />
-                    </div>
+
                     <div class="absolute w-full h-full flexy p-16 z-30">
                       <img
                         src="assets/images/orange.png"
@@ -544,31 +446,14 @@
                   <div
                     class="relative visionaryCont flexy w-full h-full group cursor-pointer"
                   >
-                    <div
-                      class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-                    >
+                    <div class="visionFront w-full h-full flexy relative">
                       <img
                         src="assets/images/whitePat.svg"
                         class="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div
-                      class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-                    >
-                      <div class="absolute flexy w-full h-full">
-                        <img
-                          src="assets/images/pinePat.svg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <img
-                        src="assets/images/pineApple.png"
-                        class="img-fluid z-10"
-                        alt=""
-                      />
-                    </div>
+
                     <div class="absolute w-full h-full flexy p-16 z-30">
                       <img
                         src="assets/images/express.png"
@@ -590,31 +475,14 @@
                   <div
                     class="relative visionaryCont flexy w-full h-full group cursor-pointer"
                   >
-                    <div
-                      class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-                    >
+                    <div class="visionFront w-full h-full flexy relative">
                       <img
                         src="assets/images/whitePat.svg"
                         class="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div
-                      class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-                    >
-                      <div class="absolute flexy w-full h-full">
-                        <img
-                          src="assets/images/pinePat.svg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <img
-                        src="assets/images/pineApple.png"
-                        class="img-fluid z-10"
-                        alt=""
-                      />
-                    </div>
+
                     <div class="absolute w-full h-full flexy p-16 z-30">
                       <img
                         src="assets/images/orange.png"
@@ -636,31 +504,14 @@
                   <div
                     class="relative visionaryCont flexy w-full h-full group cursor-pointer"
                   >
-                    <div
-                      class="visionFront w-full h-full flexy relative transition-opacity duration-500 opacity-100 group-hover:opacity-0"
-                    >
+                    <div class="visionFront w-full h-full flexy relative">
                       <img
                         src="assets/images/whitePat.svg"
                         class="img-fluid"
                         alt=""
                       />
                     </div>
-                    <div
-                      class="visionBack absolute flexy w-full h-full transition-opacity duration-500 opacity-0 group-hover:opacity-100"
-                    >
-                      <div class="absolute flexy w-full h-full">
-                        <img
-                          src="assets/images/pinePat.svg"
-                          class="img-fluid"
-                          alt=""
-                        />
-                      </div>
-                      <img
-                        src="assets/images/pineApple.png"
-                        class="img-fluid z-10"
-                        alt=""
-                      />
-                    </div>
+
                     <div class="absolute w-full h-full flexy p-16 z-30">
                       <img
                         src="assets/images/gelato.png"
@@ -929,7 +780,11 @@
                       alt=""
                     />
                   </a>
-                  <a href="javascript:void(0)" class="w-12">
+                  <a
+                    href="https://www.instagram.com/stealthyindustries/"
+                    target="_blank"
+                    class="w-12"
+                  >
                     <img
                       src="assets/images/InstagramIcon.svg"
                       class="img-fluid"
@@ -1130,7 +985,11 @@
                       alt=""
                     />
                   </a>
-                  <a href="javascript:void(0)" class="w-12">
+                  <a
+                    href="https://www.instagram.com/stealthyindustries/"
+                    target="_blank"
+                    class="w-12"
+                  >
                     <img
                       src="assets/images/igOutline.svg"
                       class="img-fluid"
@@ -1433,7 +1292,11 @@
                   alt=""
                 />
               </a>
-              <a href="javascript:void(0)" class="w-12">
+              <a
+                href="https://www.instagram.com/stealthyindustries/"
+                target="_blank"
+                class="w-12"
+              >
                 <img
                   src="assets/images/InstagramIcon.svg"
                   class="img-fluid"
