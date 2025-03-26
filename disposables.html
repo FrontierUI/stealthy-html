@@ -16,18 +16,10 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <style>
-      @media screen and (max-width: 768px) {
-        * {
-          outline: 1px solid red;
-        }
-      }
-    </style>
   </head>
 
   <body>
-    <main class="wrapperd z-[1] min-w-full max-w-full relative w-full h-full">
+    <main class="relative w-full h-full wrapperd z-[1] max-w-full">
       <section class="relative w-full h-full">
         <header
           class="flex items-center lg:justify-between border-b border-gray-300 py-3 px-5 sm:px-10 bg-transparent min-h-[65px] tracking-wide relative z-50"
@@ -158,7 +150,7 @@
 
         <div class="relative w-full h-full px-5 sm:px-10">
           <div
-            class="w-full h-full relative flex flex-col lg:flex-row items-start justify-start lg:justify-between gap-8"
+            class="w-full h-full relative flex flex-col lg:flex-row items-start justify-start lg:justify-between gap-4 lg:gap-8"
           >
             <div
               class="w-full h-full relative flex flex-col lg:flex-row items-start justify-start lg:justify-between lg:w-3/4"
@@ -172,9 +164,9 @@
               </div>
 
               <div class="flexy relative w-full h-full lg:right-10">
-                <div class="flexy gap-x-2 w-full h-full relative p-5 lg:p-8">
+                <div class="flexy gap-x-2 w-full h-full relative p-8">
                   <div
-                    class="absolute top-32 redSmPat left-0 hidden lg:block z-10"
+                    class="absolute lg:top-32 redSmPat left-0 hidden lg:block z-10"
                   >
                     <img
                       src="assets/images/Cherry.png"
@@ -189,6 +181,12 @@
                       class="img-fluid z-10"
                       alt=""
                     />
+
+                    <div
+                      class="absolute w-24 h-24 bottom-8 lg:bottom-20 -right-6 rounded-full border-2 border-black flexy text-6xl"
+                    >
+                      <i class="ri-arrow-right-up-line"></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -207,7 +205,7 @@
               </div>
 
               <div
-                class="relative max-lg:pt-5 lg:-bottom-60 lg:left-0 w-full md:max-w-sm"
+                class="relative max-lg:pt-5 lg:-bottom-60 lg:left-0 w-full md:max-w-sm bg-gray-100 rounded-lg p-4"
               >
                 <div class="vapSlider">
                   <div class="slicky mx-2 max-h-full">

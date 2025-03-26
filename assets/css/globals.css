@@ -148,6 +148,12 @@ a:hover {
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 640px) {
+  .patRed::before {
+    width: 26rem;
+  }
+}
+
 /* Faq Sect Start */
 
 .accordion .accordion-item {
